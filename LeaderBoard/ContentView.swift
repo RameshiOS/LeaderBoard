@@ -1,26 +1,14 @@
-//
-//  ContentView.swift
-//  LeaderBoard
-//
-//  Created by Ramesh Guddala on 15/03/25.
-//
-
 import SwiftUI
 
+// MARK: - ContentView
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        LeaderboardView()
     }
 }
-
+// MARK: - Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LeaderboardView()
     }
 }
