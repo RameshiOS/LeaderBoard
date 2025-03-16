@@ -1,31 +1,28 @@
-🎮 Swift Leaderboard App
+# 🎮 Swift Leaderboard App
 
-An advanced Leaderboard System built in Swift, demonstrating the power of Hashable, Equatable, Comparable, and Identifiable protocols. 🚀
+An advanced **Leaderboard System** built in Swift, demonstrating the power of **Hashable, Equatable, Comparable, and Identifiable** protocols. 🚀
 
-📌 Features
+## 📌 Features
 
-🏆 Sort Players by score using Comparable
+- 🏆 **Sort Players** by score using `Comparable`
+- 🔍 **Fast Lookups** in dictionaries using `Hashable`
+- ✅ **Check Equality** of players using `Equatable`
+- 🔗 **SwiftUI Integration** with `Identifiable`
 
-🔍 Fast Lookups in dictionaries using Hashable
+## 🛠️ Installation
 
-✅ Check Equality of players using Equatable
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/yourusername/leaderboard-app.git
+   ```
+2. Open the project in Xcode.
+3. Run the app on a simulator or device.
 
-🔗 SwiftUI Integration with Identifiable
+## 🚀 How It Works
 
-🛠️ Installation
+### Player Model Implementation
 
-Clone this repository:
-
-git clone https://github.com/yourusername/leaderboard-app.git
-
-Open the project in Xcode.
-
-Run the app on a simulator or device.
-
-🚀 How It Works
-
-Player Model Implementation
-
+```swift
 struct Player: Equatable, Hashable, Comparable, Identifiable {
     let id: UUID
     let name: String
@@ -44,9 +41,11 @@ struct Player: Equatable, Hashable, Comparable, Identifiable {
         return lhs.score > rhs.score // Higher score ranks first
     }
 }
+```
 
-Sorting the Leaderboard
+### Sorting the Leaderboard
 
+```swift
 var players: [Player] = [
     Player(id: UUID(), name: "Alice", score: 1500),
     Player(id: UUID(), name: "Bob", score: 1200),
@@ -54,17 +53,23 @@ var players: [Player] = [
 ]
 
 let sortedPlayers = players.sorted()
+```
 
-📂 Full Blog Post
+## 📂 Full Blog Post
 
-Check out my detailed article explaining Swift protocols with real-world use cases and examples! 🎯
-🔗 Read here: [Your Blog Link]
+Check out my detailed article explaining **Swift protocols** with real-world use cases and examples! 🎯 🔗 **Read here:** [Your Blog Link]
 
-💡 Contributing
+## 💡 Contributing
 
 Feel free to open issues or submit pull requests to improve the project.
 
-🚀 Follow me on LinkedIn for more Swift tips!
+## 📜 License
 
-#Swift #iOSDevelopment #SwiftUI #Leaderboard #Coding
+This project is open-source and available under the **MIT License**.
+
+---
+
+🚀 Follow me on [LinkedIn]([https://www.linkedin.com](https://www.linkedin.com/in/ramesh-guddala-0080kgrams/)) for more Swift tips!
+
+\#Swift #iOSDevelopment #SwiftUI #Leaderboard #Coding
 
